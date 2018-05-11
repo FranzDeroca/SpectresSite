@@ -1,0 +1,168 @@
+﻿@font-face {
+	font-family: Roboto-Regular;
+	src: url('Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Gugi-Regular;
+	src: url('Gugi-Regular.ttf') format('truetype');
+}
+
+
+
+
+
+
+body {
+    font-family: Gugi-Regular;
+    background-color: black;
+    color: white;
+    
+        
+}
+
+
+
+
+#first{
+    background-image:url(../Content/Images/jumbotron.png);
+    height: 500px;
+    background-repeat: no-repeat
+    
+   
+}
+
+#second {
+    background-image:url(../Content/Images/software-engineer.png);
+    height:500px;
+    width:1500px;
+    position: center;
+}
+
+
+
+#spectres {
+    font-family: Roboto-Regular
+}
+
+#business {
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    margin-left: 250px;
+    background-color: #53A0D8;
+}
+
+#business:hover {
+        background-color: #5483D6
+    }
+
+    #business:active {
+        background-color: #5483D6;
+    }
+
+
+
+#devops {
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    background-color: #53A0D8;
+}
+
+  #devops:hover {
+        background-color: #5483D6
+    }
+
+#goal {
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    margin-left: -70px;
+    background-color: #53A0D8;
+}
+
+ #goal:hover {
+        background-color: #5483D6
+    }
+
+#navbar{
+    color:white
+}
+
+#description{
+    text-align: center
+}
+
+
+
+#head{
+    text-align:center;
+}
+
+
+
+
+#about{
+    text-align: right;
+    margin-right:250px;
+   
+    
+}
+
+#microsoft{
+    text-align: right;
+    margin-right: 135px;
+    
+    
+}
+
+#career-description {
+    width: 650px;
+    height: 400px;
+    border-radius: 25px;
+    background-color:dodgerblue;
+    margin-top: 100px;
+    margin-left: 500px;
+    position:absolute;
+    bottom: 30%;
+
+}
+
+#story{
+    height: 100px;
+    width:  100px;
+    background-color: dodgerblue;
+}
+
+
+.hidden{
+    display: none
+}
+
+#clients{
+    background-image:url(../Content/Images/impactbg2.png);
+    height: 1200px;
+
+    
+    
+}
+
+#case_studies{
+    background-image:url(../Content/Images/impactbg.png);
+    background-repeat: no-repeat;
+    
+        
+    
+}
+
+div.gallery{
+    margin: 5px;
+    float: left;
+    width:180px;
+}
+
+div.gallery img {
+    width: 100% ;
+    height: auto;
+}

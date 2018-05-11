@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<link href="~/css/Styles.css" rel="stylesheet" />
+
+<div id="header">
+    <header>
+        <div class="row">
+            <div class="container text-center" id="first" style="margin-top:50px;">
+                <h1>Scale up your business</h1>
+                <h4>We build software for positive impact</h4>
+            </div>
+        </div>
+    </header>
+</div>
+
+
+
+<section class="py-5">
+    <div class="container text-center" id="second">
+        <h2>Software Engineer</h2>
+        <h5>The art of building the right business app solutions for complex</h5>
+        <h5> business challenges and opportunities</h5>
+    </div>
+</section>
+
+<div class="row" style="margin-right:40px">
+    <div class="col-md-4 text-center">
+        <div class="container" id="business" onclick="businessFunction()">
+            <h4 style="margin-bottom:50px">Atleast 3 years in business</h4>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="container" id="devops" onclick="devopsFunction()">
+            <h4>Strong DevOps Culture and Practice</h4>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="container" id="goal" onclick="goalFunction()">
+            <h4>Our ultimate Goal is always to scale up your business</h4>
+        </div>
+    </div>
+</div>
+
+<div class="row text-center" id="abc" style="margin-left:400px;margin-right:400px;">
+    <div class="container">
+        <p id="demo"></p>
+        <p id="businessDescription" class="active">
+            
+        </p>
+
+        <p id="devopsDescription">
+            
+        </p>
+
+        <p id="goalDescription">
+            
+        </p>
+    </div>
+</div>
+
+<div class="row" style="margin-top:100px">
+    <div class="container">
+        <h1 class="text-center">What clients think about us...</h1>
+        <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel" role="listbox">
+                    <!-- Slide One - Set the background image for this slide in the line below -->
+                    <div class="carousel-item active" style="background-color:dodgerblue;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>What I like about Spectres is that they suggest ideas to their client which makes the project more efficient and innovative</h4>
+                        </div>
+                    </div>
+                    <!-- Slide Two - Set the background image for this slide in the line below -->
+                    <div class="carousel-item" style="background-color:dodgerblue;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Spectres' top notch technical mastery combined with their openness to challenging new technology results in projects that are not just innovative, but also simply work!</h4>
+                        </div>
+                    </div>
+                    <!-- Slide Three - Set the background image for this slide in the line below -->
+                    <div class="carousel-item" style="background-color:dodgerblue;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Third Slide</h3>
+                            <p>This is a description for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </header>
+    </div>
+</div>
+
+<br />
+<br />
+
+<script type="text/javascript">
+    function businessFunction() {
+        var x = document.getElementById("businessDescription").innerHTML;
+        document.getElementById("demo").innerHTML = "Founded last February 3rd of 2015, Spectres has since then helped startups and medium enterprise grow by developing app solutions that fits their business";
+    }
+
+    function devopsFunction() {
+        var x = document.getElementById("devopsDescription").innerHTML;
+        document.getElementById("demo").innerHTML = "Our software engineering service revoles the union of people, process and products to continuously deliver value to our stakeholders";
+    }
+
+    function goalFunction() {
+        var x = document.getElementById("goalDescription").innerHTML;
+        document.getElementById("demo").innerHTML = "We believe you can always do more with a clear vision, bold actions and the right technology to help you reach the top of your industry.";
+    }
+
+
+</script>

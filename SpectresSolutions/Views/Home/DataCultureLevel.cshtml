@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Data-Culture";
+}
+
+<link href="~/css/Styles.css" rel="stylesheet" />
+
+
+    <div class="row" style="margin-top:50px">
+        <div class="container text-center">
+            <h2>Data Culture Level</h2>
+            <p>A company's Data Culture Level is determined by how they</p>
+        </div>
+    </div>
+
+    <div class="row" style="margin-left:150px;margin-top:30px">
+        <div class="col-md-2 text-center">
+            <div class="container" id="morty" onclick="mortyFunction()">
+                <img src="~/Content/Images/morty.png" />
+            </div>
+        </div>
+        <div class="col-md-2 text-center">
+            <div class="container" id="scribe" onclick="scribeFunction()">
+                <img src="~/Content/Images/scribe.png" />
+            </div>
+        </div>
+        <div class="col-md-2 text-center">
+            <div class="container" id="encoder" onclick="encoderFunction()">
+                <img src="~/Content/Images/encoder.png" />
+            </div>
+        </div>
+        <div class="col-md-2 text-center">
+            <div class="container" id="dbase" onclick="dbaseFunction()">
+                <img src="~/Content/Images/database-admin.png" />
+            </div>
+        </div>
+        <div class="col-md-2 text-center">
+            <div class="container" id="rick" onclick="rickFunction()">
+                <img src="~/Content/Images/rick.png" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:50px;position:center">
+        <div class="container text-center" id="story" style="height:300px;width:1000px;background-color:dodgerblue">
+            <p id="story-description" style="margin-top:50px;margin-left:120px;margin-right:120px"></p>
+            <p id="morty-story"></p>
+            <p id="scribe-story"></p>
+            <p id="encoder-story"></p>
+            <p id="dbase-story"></p>
+            <p id="rick-story"></p>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function mortyFunction() {
+            var x = document.getElementById("morty-story").innerHTML;
+            document.getElementById("story-description").innerHTML = "Companies who do not collect and store data at all. It is still a miracle why they still continue to exist.";
+        }
+
+        function scribeFunction() {
+            var x = document.getElementById("scribe-story").innerHTML;
+            document.getElementById("story-description").innerHTML = "These companies are traditional that uses pen and paper to collect and store data. They are as good as the companies that existed in 100 BC during the Han Dynasty when paper was invented in China. \n\n Without the modern tools other companies are using, the Scribe are always prone to failure to adapat to business circumstancers and evolve to be more profitable";
+        }
+
+        function encoderFunction() {
+            var x = document.getElementById("encoder-story").innerHTML;
+            document.getElementById("story-description").innerHTML = "Companies who use Microsoft Excel or any spreadsheet app equivalent. They collect and share data slight faster than the Scribe Companies. \n They also have analytical tools provided by the spreadsheet apps at their disposal but it is up to how proficient their employees in using them.";
+        }
+
+        function dbaseFunction() {
+            var x = document.getElementById("dbase-story").innerHTML;
+            document.getElementById("story-description").innerHTML = "Information Systems usually store their data in an SQL Database where an individual or department has access to the data. These companies are usually performing better than the first 3 levels mentioned for they may have real-time access to their data. It is a bonus if these companies employ profressional Database Admins who can query the database in their behalf and discover patterns and trends. They also set up data validators to prevent generating dirty data in their information systems. These companies have lesser margin in human errors";
+        }
+
+        function rickFunction() {
+            var x = document.getElementById("rick-story").innerHTML;
+            document.getElementById("story-description").innerHTML = "Data Science and Analytics can be applied in other areas of the business such as describing if currenst sales is better than the previous ones, predicting when your equipment or assets should go through maintenance and prescribing what you should do next to meet upcoming trend in your market. According the LinkedIn, there are only 19,400 data scientists based on 236 million profiles on their web app as of 2015. This means there are less than 1% available data scientist in the world. ";
+        }
+    </script>

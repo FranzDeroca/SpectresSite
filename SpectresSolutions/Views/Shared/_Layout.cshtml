@@ -1,0 +1,98 @@
+﻿@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            @Html.ActionLink("Spectres Solutions", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/popper")
+        @RenderSection("scripts", required: false)
+    </body>
+    </html>*@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@ViewBag.Title</title>
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/Content/full-slider.css" rel="stylesheet">
+    <link href="~/css/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg" style="background-color:black;">
+        <div class="container" >
+           <a class="navbar-brand" href="@Url.Action("Index", "Home")" style="color:white;" id="spectres"><img src="~/Content/Images/spectres-logo.png" style="height:30px"> Spectres</a>
+            <button class="navbar-toggler" type="button" data-toggle="c<ollapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Impact", "Home")" style="color:white">Impact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("DataCultureLevel", "Home")" style="color:white">Data Culture Level</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("About", "Home")" style="color:white">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Career", "Home")" style="color:white">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Contact", "Home")" style="color:white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @RenderBody()
+    <!-- Footer -->
+    <footer class="py-5" style="background-color:#52A2D9;margin-left:50px;margin-right:50px;margin-top:300px;">
+        <div class="container">
+            <p class="m-0 text-center text-white">&copy; Spectres Solution</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

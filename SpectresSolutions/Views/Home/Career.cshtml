@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Careers";
+}
+
+
+
+<div class="row" style="padding-top:40px">
+    <div class="container">
+        <h1 class="text-center" style="padding-bottom:40px">Careers</h1>
+        <div class="col-lg-6" id="career" style="color:white">
+            <p style="margin-left:350px;"><a href="#" id="da" class="parent_list">Digital Artist</a></p>
+            <p style="margin-left:300px"><a href="#" id="dai">Digital Artist Intern</a></p>
+            <p style="margin-left:300px"><a href="#" id="sd">Software Designer</a></p>
+            <p style="margin-left:250px"><a href="#" id="sdi">Software Designer Intern</a></p>
+            <p style="margin-left:300px"><a href="#" id="se">Software Engineer</a></p>
+            <p style="margin-left:250px"><a href="#" id="sei">Software Engineer Intern</a></p>
+            <p style="margin-left:225px"><a href="#" id="hrs">Human Resource Specialist</a></p>
+            <p style="margin-left:285px"><a href="#" id="ba">Business Associate</a></p>
+            <p style="margin-left:233px"><a href="#" id="bdi">Business Developer Intern</a></p>
+        </div>
+
+        <div class="col-lg-6" style="margin-bottom:50px">
+            <div class="container" id="career-description" style="margin-top:25px">
+                <br />
+                <h4>Qualifications</h4>
+                <hr style="background-color:white" />
+                <ul id="da-qual" class="child_list">
+                    <li>Proficient in Adobe Photoshop or similar software</li>
+                    <li>Proficient in InVision or similar software</li>
+                </ul>
+                <ul id="dai-qual" class="hidden">
+                    <li>Proficient in Adobe Photoshop or similar software</li>
+                </ul>
+                <ul id="sd-qual"  class="hidden">
+                    <li>Reads and writes HTML, CSS, and JS programming languages fluently</li>
+                    <li>Proficient in GitHub</li>
+                </ul>
+                <br />
+                <h4>Resonponsibilities</h4>
+                <hr style="background-color:white" />
+                <ul id="da-resp" class="child_list">
+                    <li>Designs the software UI(User-Interface) which includes necessary graphic images and icons for the projects</li>
+                    <li>Designs software UX(User-Experience)</li>
+                    <li>Dedicates at least 40 hours per week to Spectres</li>
+                </ul>
+                <ul id="dai-resp" class="hidden">
+                    <li>Designs the software UI(User-Interface) which includes necessary graphic images and icons for the projects</li>
+                    <li>Designs software UX(User-Experience)</li>
+                    <li>Reports directly to Business Associate</li>
+                    <li>Dedicates at least 20 hours per week to Spectres</li>
+                </ul>
+                <ul id="sd-resp" class="hidden">
+                    <li>Applies mobile-first design approach in software development</li>
+                    <li>Develop the Client-Side of the software</li>
+                    <li>Reports directly to Project Manager</li>
+                    <li>Dedicates at least 40 hours per week to Spectres</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <p style="margin-left:350px">Applicants must send an email to tj@spectres.solutions with the following requirements:</p>
+            <ul style="margin-left:350px">
+                <li>Email subject must be "Application: [Role]".</li>
+                e.g. Subject: Application: Software Engineer
+                <br />
+                <br />
+                <li>Link to a 60 Second Youtube self introduction video of why you are good choice for the role</li>
+                <br />
+                <li>Attached resume for the role</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $('ul.child_list').hide();
+
+        $('.parent_list > li').click(function () {
+            $('ul.child_list').hide();
+            $('ul.child_list', this).show();
+        })
+        
+     </script>
+
+
+</div>
+
+
+
