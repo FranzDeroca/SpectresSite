@@ -2,20 +2,30 @@
     ViewBag.Title = "About";
 }
 
-<body id="aboutus">
-    <div>
-        <img src="~/Content/Images/chiefssilo.png" style="width:auto"/>
-    </div>
-    <div class="row" id="about_us">
-        <div class="container">
-            <h3 id="about">About Spectres</h3>
-            <div id="history" style="padding-left:650px;padding-right:55px ;text-align:justify;">
-                <p>
-                    Spectres is a software technology company that specializes in app development.
-                    Our core competency is software engineering and that is why we can tailor fit an app
-                    perfect for your business needs.
-                </p>
-            </div>
+<body id="aboutus" style="background-image:url(../../Content/Images/aboutBG.png);background-size:cover">
+    <div class="row">
+        <div class="col-lg-2">
+
+        </div>
+        <div class="col-lg-4">
+            <img src="~/Content/Images/chiefssilo.png" />
+        </div>
+ 
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-3">
+            <br />
+            <br />
+            <br />
+            <h3>About Spectres</h3>
+            <p>
+                Spectres is a software technology company that specializes in app development. Our core competency is
+                software engineering and that is why we can tailor
+            </p>
+        </div>
+        <div class="col-lg-3">
+
         </div>
     </div>
 
@@ -23,25 +33,115 @@
 
 
     <div class="row" style="padding-top:200px;">
-        <div class="container">
-            <h3 id="microsoft">Proud Microsoft Partner</h3>
-            <div id="history" style="padding-left:650px;padding-right:55px ;text-align:justify">
-                <p>
-                    Spectres uses Microsoft's C# programming language. Our Code First approach help us deliver projects faster
-                    compared to Database approach practiced by most I.T companies.
-                </p>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-4" id="microsoft_partner" style="position:center;right:120px;top:20px">
+                <img src="~/Content/Images/proudmicrosoftpartnerBG.png"  />
+            </div>
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-3">
                 <br />
+                <br />
+                <br />
+                <h3>Proud Micrsoft Partner</h3>
                 <p>
-                    Most of our developed web apps are hosted on Microsoft Azure for performance reliability, data security and
-                    credibility.
+                    Spectres uses Microsoft's C# programming language. Our Code First approach help us deliver projects faster compared to the Database First approach practiced by most I.T companies.
+                </p>
+                <p>
+                    Most of our developed web apps are hosted on Microsoft Azure for performance reliability, data security and credibility
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="row" style="padding-top:150px">
+    <div class="row" style="margin-top:150px">
         <div class="container">
-            <h1 class="text-center">The Chiefs</h1>
+            <h1 class="text-center" style="margin-bottom:150px">The Chiefs</h1>
+            <div style="margin-left:50px">
+                <div class="col-md-4">
+                    <div class="container" style="margin-left:250px">
+                        <img src="~/Content/Images/rjsilo.png" id="rj" alt="rjsilo" onclick="rj();"  />
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-left:400px;">
+                    <div class="container">
+                        <img src="~/Content/Images/tjsilo.png" id="tj" alt="tjsilo" style="position:absolute;bottom:-10px;" onclick="tj();" />
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-left:540px;">
+                    <div class="container">
+                        <img src="~/Content/Images/ahmedsilo.png" id="ahmed" alt="ahmedsilo" style="position:absolute;bottom:-10px;left:20px" onclick="ahmed();" />
+                    </div>
+                </div>
+            </div>
+           
         </div>
     </div>
-</body>
+
+    <div class="row">
+        <div>
+
+        </div>
+        <div class="row" style="margin-top:50px;margin-left:500px;position:center">
+            <div class="container text-center" id="story" style="height:300px;width:600px;background-color:#4280AD">
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:120px">
+        <div class="container" style="margin-bottom:30px">
+            <h3 class="text-center">DevOps Team</h3>
+        </div>
+        <div class="col-md-3">
+            <div class="container" style="margin-left:250px">
+                <img src="~/Content/Images/rocky-card.png" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <img src="~/Content/Images/sophiecard.png" style="margin-left:120px" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <img src="~/Content/Images/elsoncard.png" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="container">
+                <img src="~/Content/Images/ralphcard.png" style="position:absolute;left:-100px" />
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+        function tj() {
+
+            var image = document.getElementById('tj');
+            image.src = "/Content/Images/tjavatar.png";
+            
+        }
+
+        function rj() {
+
+            var image = document.getElementById('rj');
+            image.src = "/Content/Images/rjavatar.png";
+        }
+
+        function ahmed() {
+
+            var image = document.getElementById('ahmed');
+            image.src = "/Content/Images/ahmedavatar.png";
+        }
+
+    </script>
+
+
+</body> 

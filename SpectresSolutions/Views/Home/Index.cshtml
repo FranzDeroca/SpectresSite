@@ -25,30 +25,32 @@
     </div>
 </section>
 
-<div class="row" style="margin-right:40px">
+<div class="row">
     <div class="col-md-4 text-center">
         <div class="container" id="business" onclick="businessFunction()">
-            <h4 style="margin-bottom:50px">Atleast 3 years in business</h4>
+            <p><br />At least <h2>3</h2>Years in business</p>
         </div>
     </div>
     <div class="col-md-4 text-center">
         <div class="container" id="devops" onclick="devopsFunction()">
-            <h4>Strong DevOps Culture and Practice</h4>
+            <p><br />Strong <h2>DevOps</h2> Culture and Practice</p>
         </div>
     </div>
     <div class="col-md-4 text-center">
         <div class="container" id="goal" onclick="goalFunction()">
-            <h4>Our ultimate Goal is always to scale up your business</h4>
+            <p><br />Our ultimate <h2>Goal</h2> is always to scale up your business</p>
         </div>
     </div>
 </div>
 
 <div class="row text-center" id="abc" style="margin-left:400px;margin-right:400px;">
     <div class="container">
-        <p id="demo"></p>
+        <p id="demo">
+            Founded last February 3rd of 2015, Spectres has since then helped startups and medium enterprise grow by developing app solutions that fits their business
+        </p>
         <p id="businessDescription" class="active">
             
-        </p>
+        </p>    
 
         <p id="devopsDescription">
             
@@ -63,7 +65,7 @@
 <div class="row" style="margin-top:100px">
     <div class="container">
         <h1 class="text-center">What clients think about us...</h1>
-        <header>
+        <header style="margin-top:100px">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -72,19 +74,28 @@
                 </ol>
                 <div class="carousel" role="listbox">
                     <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-color:dodgerblue;">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h4>What I like about Spectres is that they suggest ideas to their client which makes the project more efficient and innovative</h4>
+                    <div class="carousel-item active" style="background-color:#52A2D9;">
+                        <div class="container">
+                            <div class="carousel-caption d-none d-md-block">
+                                  <p>
+                                      What I like about Spectres is that they suggest ideas to their client 
+                                      which makes the project more efficient and innovative
+                                </p>                          
+                            </div>
                         </div>
+                        
                     </div>
                     <!-- Slide Two - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-color:dodgerblue;">
+                    <div class="carousel-item" style="background-color:#52A2D9;">
                         <div class="carousel-caption d-none d-md-block">
-                            <h4>Spectres' top notch technical mastery combined with their openness to challenging new technology results in projects that are not just innovative, but also simply work!</h4>
+                           <p>
+                               Spectres' top notch technical mastery combined with their openness to challenging new 
+                               technology results in projects that are not just innovative, but also simply work!
+                           </p>
                         </div>
                     </div>
                     <!-- Slide Three - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-color:dodgerblue;">
+                    <div class="carousel-item" style="background-color:#52A2D9;">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Third Slide</h3>
                             <p>This is a description for the third slide.</p>
@@ -104,13 +115,16 @@
     </div>
 </div>
 
+
 <br />
 <br />
 
 <script type="text/javascript">
     function businessFunction() {
         var x = document.getElementById("businessDescription").innerHTML;
+        document.getElementById("")
         document.getElementById("demo").innerHTML = "Founded last February 3rd of 2015, Spectres has since then helped startups and medium enterprise grow by developing app solutions that fits their business";
+        
     }
 
     function devopsFunction() {

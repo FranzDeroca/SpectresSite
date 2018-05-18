@@ -6,9 +6,9 @@
 
 <div class="row" style="padding-top:40px">
     <div class="container">
-        <h1 class="text-center" style="padding-bottom:40px">Careers</h1>
+        <h1 class="text-center" style="margin-bottom:40px">Careers</h1>
         <div class="col-lg-6" id="career" style="color:white">
-            <p style="margin-left:350px;"><a href="#" id="da" class="parent_list">Digital Artist</a></p>
+            <p style="margin-left:350px;"><a href="#" id="da">Digital Artist</a></p>
             <p style="margin-left:300px"><a href="#" id="dai">Digital Artist Intern</a></p>
             <p style="margin-left:300px"><a href="#" id="sd">Software Designer</a></p>
             <p style="margin-left:250px"><a href="#" id="sdi">Software Designer Intern</a></p>
@@ -20,11 +20,11 @@
         </div>
 
         <div class="col-lg-6" style="margin-bottom:50px">
-            <div class="container" id="career-description" style="margin-top:25px">
+            <div class="container" id="career-description">
                 <br />
                 <h4>Qualifications</h4>
                 <hr style="background-color:white" />
-                <ul id="da-qual" class="child_list">
+                <ul id="da-qual">
                     <li>Proficient in Adobe Photoshop or similar software</li>
                     <li>Proficient in InVision or similar software</li>
                 </ul>
@@ -77,11 +77,12 @@
 
 
     <script type="text/javascript">
-        $('ul.child_list').hide();
+        $('#da').click(function () {
+            $('#da-qual, #da-resp').toggle();
+        })
 
-        $('.parent_list > li').click(function () {
-            $('ul.child_list').hide();
-            $('ul.child_list', this).show();
+        $('#dai').click(function () {
+            $('#dai-qual, #dai-resp').toggle();
         })
         
      </script>
