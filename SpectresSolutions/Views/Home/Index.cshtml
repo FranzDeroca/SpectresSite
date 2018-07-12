@@ -2,12 +2,18 @@
     ViewBag.Title = "Index";
 }
 
+
+
 <link href="~/css/Styles.css" rel="stylesheet" />
+
+
+
+
 
 <div id="header">
     <header>
         <div class="row">
-            <div class="container text-center" id="first" style="margin-top:50px;">
+            <div class="container text-center" id="first">
                 <h1>Scale up your business</h1>
                 <h4>We build software for positive impact</h4>
             </div>
@@ -18,51 +24,64 @@
 
 
 <section class="py-5">
-    <div class="container text-center" id="second">
+    <div class="container text-center" id="second" >
         <h2>Software Engineer</h2>
         <h5>The art of building the right business app solutions for complex</h5>
         <h5> business challenges and opportunities</h5>
     </div>
 </section>
 
-<div class="row">
+
+<div style="margin-top:50px">
+
+</div>
+
+<div class="row" id="abc">
     <div class="col-md-4 text-center">
-        <div class="container" id="business" onclick="businessFunction()">
+        <div  id="business" onclick="businessFunction()">
             <p><br />At least <h2>3</h2>Years in business</p>
+            <br />
+            <br />
+            <br />
+            <br />
+
         </div>
+
+        <p id="businessDescription" class="active">
+
+        </p>
     </div>
     <div class="col-md-4 text-center">
         <div class="container" id="devops" onclick="devopsFunction()">
             <p><br />Strong <h2>DevOps</h2> Culture and Practice</p>
+            <br />
+            <br />
+            <p id="demo" class="text-center">
+                Founded last February 3rd of 2015, Spectres has since then helped startups and medium enterprise grow by developing app solutions that fits their business
+
+            </p>
+
+            <p id="devopsDescription">
+
+            </p>
         </div>
     </div>
     <div class="col-md-4 text-center">
         <div class="container" id="goal" onclick="goalFunction()">
             <p><br />Our ultimate <h2>Goal</h2> is always to scale up your business</p>
+            <br />
+            <br />
+            <p id="goalDescription">
+
+            </p>
         </div>
     </div>
 </div>
 
-<div class="row text-center" id="abc" style="margin-left:400px;margin-right:400px;">
-    <div class="container">
-        <p id="demo">
-            Founded last February 3rd of 2015, Spectres has since then helped startups and medium enterprise grow by developing app solutions that fits their business
-        </p>
-        <p id="businessDescription" class="active">
-            
-        </p>    
 
-        <p id="devopsDescription">
-            
-        </p>
 
-        <p id="goalDescription">
-            
-        </p>
-    </div>
-</div>
 
-<div class="row" style="margin-top:100px">
+<div class="row" id="testimony">
     <div class="container">
         <h1 class="text-center">What clients think about us...</h1>
         <header style="margin-top:100px">
@@ -74,24 +93,28 @@
                 </ol>
                 <div class="carousel" role="listbox">
                     <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-color:#52A2D9;">
+                    <div class="carousel-item active" id="testimony1" >
                         <div class="container">
                             <div class="carousel-caption d-none d-md-block">
-                                  <p>
-                                      What I like about Spectres is that they suggest ideas to their client 
-                                      which makes the project more efficient and innovative
-                                </p>                          
+                                <img id="jerome" src="~/Content/Images/jeromeko.png" />
+                                <p>
+                                    What I like about Spectres is that they suggest ideas to their client
+                                    which makes the project more efficient and innovative
+                                </p>
+                                <img src="~/Content/Images/silicon valley logo.png" />
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- Slide Two - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-color:#52A2D9;">
+                    <div class="carousel-item" id="testimony2">
                         <div class="carousel-caption d-none d-md-block">
-                           <p>
-                               Spectres' top notch technical mastery combined with their openness to challenging new 
-                               technology results in projects that are not just innovative, but also simply work!
-                           </p>
+                            <img id="ej" src="~/Content/Images/ejarboleda.png" />
+                            <p>
+                                Spectres' top notch technical mastery combined with their openness to challenging new
+                                technology results in projects that are not just innovative, but also simply work!
+                            </p>
+                            <img id="taxumo" src="~/Content/Images/taxumo.png" />
                         </div>
                     </div>
                     <!-- Slide Three - Set the background image for this slide in the line below -->
@@ -102,40 +125,108 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </header>
     </div>
 </div>
 
 
+<div id="approach">
+    <h2 class="text-center">Advantages of our Approach</h2>
+    <div class="row">
+        <div class="col-lg-6">
+            <h4 class="text-center">Business Rapport</h4>
+            <img id="rapport" src="~/Content/Images/businessrapport.png" />
+            <p>
+                Our weekly meetups and interactions with our clients provides transparency. Everyone is well-informed with
+                the progress of our projects
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <h4 class="text-center">Output Driven</h4>
+            <img id="output" src="~/Content/Images/outputdriven.png" style="position:center" />
+            <p>
+                Clients pay for our output, not our efforts. This encourages us to create value for your business,
+                not waste time
+            </p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="row" id="approach1">
+        <div class="col-lg-6">
+            <h4 class="text-center">Most Adaptable</h4>
+            <img id="adapt" src="~/Content/Images/mostadaptable.png" />
+            <p>
+                We respond more to changes over following plan. This ensures the business app
+                solutions we are building delivers value to our clients.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <h4 class="text-center">Budget Friendly</h4>
+            <img id="budget" src="~/Content/Images/budgetfriendly.png" />
+            <p>
+                We get paid for every end of sprint. This allows our clients to focus on the vision becoming a reality
+                more than negotiate for a new contract
+            </p>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="row" id="approach2">
+        <div class="col-lg-12 text-center">
+            <h4>Flexible Options</h4>
+            <img id="options" src="~/Content/Images/flexibleoptions.png" />
+            <p>
+                After each sprint review, our clients can decide to cancel or renew our contract.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
 <br />
 <br />
+
+
 
 <script type="text/javascript">
     function businessFunction() {
         var x = document.getElementById("businessDescription").innerHTML;
-        document.getElementById("")
         document.getElementById("demo").innerHTML = "Founded last February 3rd of 2015, Spectres has since then helped startups and medium enterprise grow by developing app solutions that fits their business";
-        
+
+        $('#businessDescription').on('click', function () {
+            $('business').css('background-image', 'url(~/Content/Images/3yearsinbusiness.png)');
+        })
+
+
     }
 
     function devopsFunction() {
         var x = document.getElementById("devopsDescription").innerHTML;
         document.getElementById("demo").innerHTML = "Our software engineering service revoles the union of people, process and products to continuously deliver value to our stakeholders";
+
+
+        $('#devopsDescription').on('click', function () {
+            $('devops').css('background-image', 'url(~/Content/Images/strongdevops_1024.png)');
+        })
     }
 
     function goalFunction() {
         var x = document.getElementById("goalDescription").innerHTML;
         document.getElementById("demo").innerHTML = "We believe you can always do more with a clear vision, bold actions and the right technology to help you reach the top of your industry.";
+
+
+        $('#goalDescription').on('click', function () {
+            $('goal').css('background-image', 'url(~/Content/Images/ultimategoal.png)');
+        })
     }
+
 
 
 </script>

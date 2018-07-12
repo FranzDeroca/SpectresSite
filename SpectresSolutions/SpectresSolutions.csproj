@@ -197,6 +197,7 @@
     <Content Include="Content\Images\ahmedavatar.png" />
     <Content Include="Content\Images\ahmedcard.png" />
     <Content Include="Content\Images\ahmedsilo.png" />
+    <Content Include="Content\Images\careerbg.png" />
     <Content Include="Content\Images\chiefssilo.png" />
     <Content Include="Content\Images\database-admin.png" />
     <Content Include="Content\Images\ejarboleda.png" />
@@ -217,6 +218,7 @@
     <Content Include="Content\Images\software-engineer.png" />
     <Content Include="Content\Images\sophiecard.png" />
     <Content Include="Content\Images\space-bg.png" />
+    <Content Include="Content\Images\stongdevops_1024.png" />
     <Content Include="Content\Images\testimonial-bg.png" />
     <Content Include="Content\Images\tjavatar.png" />
     <Content Include="Content\Images\tjcard.png" />

@@ -2,93 +2,205 @@
     ViewBag.Title = "Careers";
 }
 
+<br />
 
 
-<div class="row" style="padding-top:40px">
-    <div class="container">
-        <h1 class="text-center" style="margin-bottom:40px">Careers</h1>
-        <div class="col-lg-6" id="career" style="color:white">
-            <p style="margin-left:350px;"><a href="#" id="da">Digital Artist</a></p>
-            <p style="margin-left:300px"><a href="#" id="dai">Digital Artist Intern</a></p>
-            <p style="margin-left:300px"><a href="#" id="sd">Software Designer</a></p>
-            <p style="margin-left:250px"><a href="#" id="sdi">Software Designer Intern</a></p>
-            <p style="margin-left:300px"><a href="#" id="se">Software Engineer</a></p>
-            <p style="margin-left:250px"><a href="#" id="sei">Software Engineer Intern</a></p>
-            <p style="margin-left:225px"><a href="#" id="hrs">Human Resource Specialist</a></p>
-            <p style="margin-left:285px"><a href="#" id="ba">Business Associate</a></p>
-            <p style="margin-left:233px"><a href="#" id="bdi">Business Developer Intern</a></p>
-        </div>
+<link href="~/css/Styles.css" rel="stylesheet" />
 
-        <div class="col-lg-6" style="margin-bottom:50px">
-            <div class="container" id="career-description">
-                <br />
-                <h4>Qualifications</h4>
-                <hr style="background-color:white" />
-                <ul id="da-qual">
-                    <li>Proficient in Adobe Photoshop or similar software</li>
-                    <li>Proficient in InVision or similar software</li>
-                </ul>
-                <ul id="dai-qual" class="hidden">
-                    <li>Proficient in Adobe Photoshop or similar software</li>
-                </ul>
-                <ul id="sd-qual"  class="hidden">
-                    <li>Reads and writes HTML, CSS, and JS programming languages fluently</li>
-                    <li>Proficient in GitHub</li>
-                </ul>
-                <br />
-                <h4>Resonponsibilities</h4>
-                <hr style="background-color:white" />
-                <ul id="da-resp" class="child_list">
-                    <li>Designs the software UI(User-Interface) which includes necessary graphic images and icons for the projects</li>
-                    <li>Designs software UX(User-Experience)</li>
-                    <li>Dedicates at least 40 hours per week to Spectres</li>
-                </ul>
-                <ul id="dai-resp" class="hidden">
-                    <li>Designs the software UI(User-Interface) which includes necessary graphic images and icons for the projects</li>
-                    <li>Designs software UX(User-Experience)</li>
-                    <li>Reports directly to Business Associate</li>
-                    <li>Dedicates at least 20 hours per week to Spectres</li>
-                </ul>
-                <ul id="sd-resp" class="hidden">
-                    <li>Applies mobile-first design approach in software development</li>
-                    <li>Develop the Client-Side of the software</li>
-                    <li>Reports directly to Project Manager</li>
-                    <li>Dedicates at least 40 hours per week to Spectres</li>
-                </ul>
+
+<body id="career">
+    <div class="row" style="padding-top:40px">
+        <div class="container">
+            <h1 class="text-center" style="margin-bottom:40px">Careers</h1>
+            <div class="col-lg-6">
+                <p style="margin-left:350px" id="link1"><a href="#">Digital Artist</a></p>
+                <p style="margin-left:300px" id="link2"><a href="#">Digital Artist Intern</a></p>
+                <p style="margin-left:300px" id="link3"><a href="#">Software Designer</a></p>
+                <p style="margin-left:250px" id="link4"><a href="#">Software Designer Intern</a></p>
+                <p style="margin-left:300px" id="link5"><a href="#">Software Engineer</a></p>
+                <p style="margin-left:250px" id="link6"><a href="#">Software Engineer Intern</a></p>
+                <p style="margin-left:225px" id="link7"><a href="#">Human Resource Specialist</a></p>
+                <p style="margin-left:285px" id="link8"><a href="#">Business Associate</a></p>
+                <p style="margin-left:233px" id="link9"><a href="#">Business Developer Intern</a></p>
+            </div>
+
+
+
+            <div class="col-lg-6" style="margin-bottom:200px">
+                <div class="container" id="career-description">
+                    <br />
+                    <div id="page1" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Proficient in Adobe Photoshop or similar software</p>
+                        <p>Proficient in InVision or Similar Software</p>
+                        <br />
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Designs the software UI (User-Interface) which includes the necessary graphic images and icons for the projects</p>
+                        <p>Designs the software UX (User-Experience)</p>
+                        <p>Dedicates atleast 40 hrs per week</p>
+                    </div>
+
+                    <div id="page2" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Proficient in Adobe Photoshop or similar software</p>
+                        <br />
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Designs the software UI (User-Interface) which includes the necessary graphic images and icons for the projects</p>
+                        <p>Designs the software UX (User-Experience)</p>
+                        <p>Reports directly to Business Associate</p>
+                        <p>Dedicates atleast 20 hrs per week</p>
+                    </div>
+
+                    <div id="page3" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Read and writes HTML, CSS and Javascript programming languages fluently</p>
+                        <p>Proficient in GitHub</p>
+                        <br>
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Applies mobile first design approach</p>
+                        <p>Develop the Client-Side of the software</p>
+                        <p>Reports directly to Project Manager</p>
+                        <p>Dedicates atleast 40 hrs per week</p>
+                    </div>
+
+                    <div id="page4" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Read and writes HTML, CSS and Javascript programming languages fluently</p>
+                        <p>Proficient in GitHub</p>
+                        <br>
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Applies mobile first design approach</p>
+                        <p>Develop the Client-Side of the software</p>
+                        <p>Reports directly to Project Manager</p>
+                        <p>Dedicates atleast 20 hrs per week</p>
+                    </div>
+
+                    <div id="page5" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Proficient in Visual Studio</p>
+                        <p>Proficient in GitHub</p>
+                        <p>Proficient in Azure</p>
+                        <p>Proficient in Filezilla</p>
+                        <p>Reads and writes C# programming language fluently</p>
+                        <br>
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Applies engineering concepts in software development</p>
+                        <p>Develop the Server-Side of the software</p>
+                        <p>Reports directly to Project Manager</p>
+                        <p>Dedicates atleast 40 hrs per week</p>
+                    </div>
+
+                    <div id="page6" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Proficient in Visual Studio</p>
+                        <p>Proficient in GitHub</p>
+                        <p>Proficient in Azure</p>
+                        <p>Proficient in Filezilla</p>
+                        <p>Reads and writes C# programming language fluently</p>
+                        <br>
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Applies engineering concepts in software development</p>
+                        <p>Develop the Server-Side of the software</p>
+                        <p>Reports directly to Project Manager</p>
+                        <p>Dedicates atleast 20 hrs per week</p>
+                    </div>
+
+                    <div id="page7" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Holds a degree in Human Resources Management or related course programs</p>
+                        <br>
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Recruits A+ players and top talents for Spectres</p>
+                        <p>Facilitates top talents in all their government and company requirements to officially start their jobs<p>
+                    </div>
+
+                    <div id="page8" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Knowledgable in SDLC (Systems Development Life Cycle)</p>
+                        <p>Holds a degree in Information Systems, Computer Science, Business Administration, Business Management or similar course programs.</p>
+                        <br>
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Gathers business requirements from clients</p>
+                        <p>Analyze and Design cloud solutions for clients<p>
+                        <p>Propose cloud solutions to clients</p>
+                    </div>
+
+                    <div id="page8" class="content">
+                        <h4>Qualifications</h4>
+                        <hr style="background-color:white" />
+                        <p>Knowledgable in Business Management and Administration</p>
+                        <br>
+                        <h4>Responsibilities</h4>
+                        <hr style="background-color:white" />
+                        <p>Writes business documents.</p>
+                        <p>Reports directly to CEO.<p>
+                        <p>Dedicates atleast 20 hours per week to Spectres.</p>
+                    </div>
+
+
+                </div>
             </div>
         </div>
-    </div>
 
-    <div>
-        <div class="container">
-            <p style="margin-left:350px">Applicants must send an email to tj@spectres.solutions with the following requirements:</p>
-            <ul style="margin-left:350px">
-                <li>Email subject must be "Application: [Role]".</li>
-                e.g. Subject: Application: Software Engineer
-                <br />
-                <br />
-                <li>Link to a 60 Second Youtube self introduction video of why you are good choice for the role</li>
-                <br />
-                <li>Attached resume for the role</li>
-            </ul>
+        <div>
+            <div class="container">
+                <p style="margin-left:350px">Applicants must send an email to <span style="color:blue">tj@spectres.solutions</span> with the following requirements:</p>
+                <ul style="margin-left:350px">
+                    <li>Email subject must be "Application: [Role]".</li>
+                    e.g. Subject: <span style="color:blue">Application: Software Engineer</span>
+                    <br />
+                    <br />
+                    <li>Link to a 60 Second Youtube self introduction video of why you are good choice for the role</li>
+                    <br />
+                    <li>Attached resume for the role</li>
+                </ul>
 
+            </div>
         </div>
+
+
+
+
+
     </div>
 
 
-    <script type="text/javascript">
-        $('#da').click(function () {
-            $('#da-qual, #da-resp').toggle();
-        })
 
-        $('#dai').click(function () {
-            $('#dai-qual, #dai-resp').toggle();
-        })
-        
-     </script>
+</body>
 
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
-</div>
+<script type="text/javascript">
 
+    $('#career a').click(function (e) {
+        hideContentDivs();
+        var tmp_div = $(this).parent().index();
+        $('#career-description div').eq(tmp_div).show();
+    });
 
+    function hideContentDivs() {
+        $('#career-description div').each(function () {
+            $(this).hide();
+        });
+    }
+    hideContentDivs();
 
+</script>

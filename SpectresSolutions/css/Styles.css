@@ -11,26 +11,67 @@
 
 
 
-body {
+
+ body {
     font-family: Gugi-Regular;
+    font-weight: normal;
     background-color: black;
-    color: white;        
+    color: white;    
+    
+    
+    
+    
 }
 
 
+
+/*INDEX PAGE*/
 #first{
     background-image:url(../Content/Images/jumbotron.png);
     height: 500px;
-    background-repeat: no-repeat
-    
+    background-repeat: no-repeat;
+
+    margin-top:50px;
+    background-attachment:fixed
    
 }
 
 #second {
-    background-image:url(../Content/Images/software-engineer.png);
-    height:500px;
-    width:1500px;
+    background-image: url(../Content/Images/software-engineer.png);
+    height: 500px;
+    width: 1500px;
     position: center;
+   
+}
+
+#testimony{
+    background-image:url(../Content/Images/testimonial-bg.png);
+
+    margin-top:20%;
+
+}
+
+#testimony1 {
+   
+}
+
+#jerome{
+    position: absolute;
+    bottom: 20px;
+    right: 350px;
+    
+   
+}
+
+#ej {
+    position: absolute;
+    bottom: 20px;
+    right: 350px;
+}
+
+#taxumo{
+    height:50px;
+    width:300px;
 }
 
 
@@ -39,12 +80,23 @@ body {
     font-family: Roboto-Regular
 }
 
+#abc {
+   background-image:url(../Content/Images/3yearsinbusiness.png);
+  
+   background-size: auto 100%;
+
+  height: 100%;
+}
+
 #business {
     width: 250px;
     height: 200px;
     border-radius: 25px;
     margin-left: 250px;
     background-color: #53A0D8;
+
+
+    
 }
 
 #business:hover {
@@ -55,8 +107,7 @@ body {
         background-color: #5483D6;
     }
 
-
-
+  
 #devops {
     width: 250px;
     height: 200px;
@@ -80,6 +131,69 @@ body {
         background-color: #5483D6
     }
 
+#approach {
+    background-image: url(../../Content/Images/space-bg.png);
+    border: 0;
+    background-attachment: fixed;
+    position:fixed;
+
+    margin-top: 100%;
+    
+}
+
+ #rapport{
+     display:block;
+     margin-right: auto;
+     margin-left: auto;
+
+ }
+
+#output {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#adapt {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#budget {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#approach1{
+   padding:120px;
+}
+
+
+/*IMPACT PAGE*/
+#clients {
+    background-image: url(../Content/Images/impactbg2.png);
+    height: 1200px;
+}
+
+#case_studies {
+    background-image: url(../Content/Images/impactbg.png);
+    background-repeat: no-repeat;
+}
+
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+
 #navbar{
     color:white
 }
@@ -94,25 +208,41 @@ body {
     text-align:center;
 }
 
+/*DATA CULTURE PAGE*/
+#data_culture {
+    background-image: url(../Content/Images/space-bg.png)
+}
 
 
-
+/*ABOUT PAGE*/
 #about{
     text-align: right;
     margin-right:250px;
-   
-    
+}
+
+#aboutus {
+    background-image:url(../../Content/Images/aboutBG.png);background-size:cover;
 }
 
 #microsoft{
     
-    
+}
+
+#story {
+    height: 100px;
+    width: 100px;
+    background-color: dodgerblue;
+}
+
+
+/*CAREER PAGE*/
+#career {
+ 
+  
     
 }
 
 #career-description {
-    width: 650px;
-    height: 400px;
     border-radius: 25px;
     background-color: #53A0D8;
     margin-top:-380px;
@@ -122,53 +252,30 @@ body {
    
 }
 
-#story{
-    height: 100px;
-    width:  100px;
-    background-color: dodgerblue;
-}
 
 
-.hidden{
+.hidden {
     display: none
 }
 
-#clients{
-    background-image:url(../Content/Images/impactbg2.png);
-    height: 1200px;
 
-    
-    
-}
-
-#case_studies{
-    background-image:url(../Content/Images/impactbg.png);
-    background-repeat: no-repeat;
-    
-        
-    
-}
-
-div.gallery{
-    margin: 5px;
-    float: left;
-    width:180px;
-}
-
-div.gallery img {
-    width: 100% ;
-    height: auto;
-}
-
-
+/*CONTACT PAGE*/
 #contact_us{
     background-image:url(../Content/Images/contactus-bg.png);
     background-position:center;
-    background-repeat:no-repeat
+    background-repeat:no-repeat;
+    margin-bottom: 400px;
+
         
 }
 
-#data_culture{
-    
-    
+
+
+
+
+
+a:link{
+    color:white;
 }
+
+

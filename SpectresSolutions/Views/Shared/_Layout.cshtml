@@ -48,52 +48,61 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="~/Content/full-slider.css" rel="stylesheet">
+
     <link href="~/css/Styles.css" rel="stylesheet" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
           rel="stylesheet" />
 </head>
 <body>
     <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg " style="background-color:black;">
-                <div class="container">
-                    <a class="navbar-brand" href="@Url.Action("Index", "Home")" style="color:white;" id="spectres"><img src="~/Content/Images/spectres-logo.png" style="height:30px"> Spectres</a>
-                    <button class="navbar-toggler" type="button" data-toggle="c<ollapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="@Url.Action("Impact", "Home")" style="color:white">Impact</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="@Url.Action("DataCultureLevel", "Home")" style="color:white">Data Culture Level</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="@Url.Action("About", "Home")" style="color:white">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="@Url.Action("Career", "Home")" style="color:white">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="@Url.Action("Contact", "Home")" style="color:white">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            @RenderBody()
-            <!-- Footer -->
-            <footer class="py-5" style="background-color:#52A2D9;margin-left:50px;margin-right:50px;margin-top:300px;">
-                <div class="container">
-                        <p class="m-0 text-center text-white">&copy; Spectres Solution</p>
-                </div>
-                <!-- /.container -->
-            </footer>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color:black;">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")" style="color:white;" id="spectres"><img src="~/Content/Images/spectres-logo.png" style="height:30px"> Spectres</a>
+            <button class="navbar-toggler" type="button" data-toggle="c<ollapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Impact", "Home")" style="color:white;padding-right:2em;">Impact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("DataCultureLevel", "Home")" style="color:white;padding-right:2em;">Data Culture Level</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("About", "Home")" style="color:white;padding-right:2em;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Career", "Home")" style="color:white;padding-right:2em;">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Contact", "Home")" style="color:white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @RenderBody()
 
 
-            <!-- Bootstrap core JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-5" style="background-color:#52A2D9;margin-left:50px;margin-right:50px;margin-top:200px;">
+        <div class="container">
+            <p class="m-0 text-center text-white">&copy; Spectres Solution</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--jQuery 3-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
 </body>
 </html>
 
